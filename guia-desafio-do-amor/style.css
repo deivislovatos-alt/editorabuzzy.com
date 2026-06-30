@@ -1144,6 +1144,21 @@ html.reveal-ready [data-reveal].is-visible {
     padding: 24px 14px 42px;
   }
 
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero .eyebrow,
+  .hero-promise,
+  .hero-subpromise {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-subpromise {
+    align-items: center;
+  }
+
   h1 {
     max-width: 420px;
     font-size: clamp(1.78rem, 9.2vw, 2.55rem);
