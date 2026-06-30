@@ -1201,8 +1201,19 @@ html.reveal-ready [data-reveal].is-visible {
 
   .hero-subpromise {
     margin-top: 14px;
-    font-size: clamp(1.08rem, 5.1vw, 1.42rem);
+    font-size: clamp(1.04rem, 4.9vw, 1.34rem);
     line-height: 1.16;
+  }
+
+  .hero-subpromise strong {
+    display: block;
+    margin-top: 0.12em;
+    font-size: clamp(1.92rem, 9.6vw, 2.72rem);
+    line-height: 0.98;
+  }
+
+  .hero-subpromise strong em {
+    display: block;
   }
 
   .film-reference {
