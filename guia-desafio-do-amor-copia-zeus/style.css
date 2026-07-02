@@ -120,6 +120,166 @@ img {
   object-fit: contain;
 }
 
+.hero-remake {
+  grid-template-columns: minmax(420px, 0.9fr) minmax(360px, 0.78fr);
+  gap: clamp(22px, 4vw, 58px);
+  min-height: 100vh;
+  padding-top: clamp(34px, 5vw, 70px);
+  padding-bottom: clamp(34px, 5vw, 70px);
+  background:
+    radial-gradient(circle at 72% 40%, rgba(255, 155, 44, 0.2), transparent 22%),
+    linear-gradient(180deg, #110505 0%, #260b0a 48%, #100504 100%);
+}
+
+.hero-remake::before,
+.hero-remake::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+}
+
+.hero-remake::before {
+  z-index: -2;
+  display: block;
+  transform: scale(1.01);
+  background: url("assets/images/hero-checkout-reference.jpg") center / cover no-repeat;
+  filter: none;
+  opacity: 1;
+}
+
+.hero-remake::after {
+  z-index: -1;
+  display: block;
+  background:
+    linear-gradient(90deg, rgba(4, 2, 2, 0.88) 0%, rgba(27, 7, 7, 0.7) 42%, rgba(17, 6, 5, 0.22) 100%),
+    linear-gradient(180deg, rgba(8, 3, 3, 0.1), rgba(8, 3, 3, 0.34));
+}
+
+.hero-remake-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+}
+
+.hero-remake-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 20px;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 219, 143, 0.34);
+  border-radius: 999px;
+  color: #f5d284;
+  background: rgba(111, 27, 31, 0.58);
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero-remake-tag::before {
+  content: "♡";
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.hero-remake h1 {
+  max-width: 650px;
+  color: #fff6e7;
+  font-family: "Cormorant Garamond", "DM Sans", serif;
+  font-size: clamp(3rem, 5.8vw, 5.75rem);
+  font-weight: 700;
+  line-height: 0.88;
+  text-transform: uppercase;
+  text-shadow: 0 8px 32px rgba(0, 0, 0, 0.58);
+}
+
+.hero-remake h1 strong {
+  display: block;
+  color: #e5ae42;
+  font: inherit;
+}
+
+.hero-remake-separator {
+  max-width: 470px;
+  margin: 16px 0 14px;
+  color: #f2d58c;
+  font-size: 1.4rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.hero-remake-line {
+  margin: 0;
+  color: #fff8ee;
+  font-size: clamp(1.12rem, 1.8vw, 1.42rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.hero-remake-promise {
+  max-width: 560px;
+  margin: 8px 0 0;
+  color: #fff7e7;
+  font-family: "Cormorant Garamond", "DM Sans", serif;
+  font-size: clamp(3.05rem, 5.7vw, 5.8rem);
+  font-weight: 700;
+  line-height: 0.84;
+  text-transform: uppercase;
+  text-shadow: 0 8px 32px rgba(0, 0, 0, 0.58);
+}
+
+.hero-remake-promise strong {
+  display: block;
+  color: #e5ae42;
+  font: inherit;
+}
+
+.hero-remake-cta {
+  min-width: min(100%, 360px);
+  margin-top: 24px;
+  color: #32120f;
+  background: linear-gradient(135deg, #ffe06a 0%, #ffb21d 46%, #ff7a1a 100%);
+  box-shadow:
+    0 18px 46px rgba(255, 150, 26, 0.42),
+    0 0 0 6px rgba(255, 214, 92, 0.13);
+}
+
+.hero-remake-visual {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 420px);
+  justify-self: center;
+}
+
+.hero-remake-visual img {
+  width: 100%;
+  filter: drop-shadow(0 34px 62px rgba(0, 0, 0, 0.48));
+}
+
+.hero-remake-visual span {
+  position: absolute;
+  right: -10px;
+  bottom: 18%;
+  display: grid;
+  width: 112px;
+  height: 112px;
+  place-items: center;
+  border: 2px solid rgba(255, 229, 158, 0.6);
+  border-radius: 999px;
+  color: #fff2c6;
+  background:
+    radial-gradient(circle at 35% 30%, rgba(145, 45, 45, 0.96), rgba(88, 21, 23, 0.96) 72%),
+    #7b2728;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.36);
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1.08;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .hero::before {
   position: absolute;
   inset: 0;
@@ -1052,6 +1212,30 @@ html.reveal-ready [data-reveal].is-visible {
     padding-bottom: 54px;
   }
 
+  .hero-remake {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-remake-copy {
+    margin: 0 auto;
+  }
+
+  .hero-remake-tag,
+  .hero-remake-cta {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-remake-separator {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-remake-visual {
+    width: min(360px, 78vw);
+  }
+
   .hero-copy {
     max-width: 680px;
     margin: 0 auto;
@@ -1175,6 +1359,53 @@ html.reveal-ready [data-reveal].is-visible {
       radial-gradient(circle at 86% 19%, rgba(218, 112, 42, 0.26), transparent 23%),
       radial-gradient(circle at 18% 12%, rgba(255, 218, 132, 0.1), transparent 28%),
       linear-gradient(180deg, #180707 0%, #321211 48%, #140606 100%);
+  }
+
+  .hero-remake {
+    padding: 22px 14px 34px;
+    background:
+      linear-gradient(180deg, #110505 0%, #260b0a 48%, #100504 100%);
+  }
+
+  .hero-remake-tag {
+    margin-bottom: 14px;
+    padding: 7px 14px;
+    font-size: 0.68rem;
+  }
+
+  .hero-remake h1 {
+    font-size: clamp(2.25rem, 11.2vw, 3.35rem);
+    line-height: 0.9;
+  }
+
+  .hero-remake-separator {
+    margin: 10px auto;
+    font-size: 1.05rem;
+  }
+
+  .hero-remake-line {
+    font-size: 1rem;
+  }
+
+  .hero-remake-promise {
+    font-size: clamp(2.3rem, 11vw, 3.35rem);
+    line-height: 0.88;
+  }
+
+  .hero-remake-cta {
+    min-width: min(100%, 330px);
+    margin-top: 18px;
+  }
+
+  .hero-remake-visual {
+    width: min(250px, 68vw);
+  }
+
+  .hero-remake-visual span {
+    right: -6px;
+    width: 74px;
+    height: 74px;
+    font-size: 0.52rem;
   }
 
   .hero-image-first {
