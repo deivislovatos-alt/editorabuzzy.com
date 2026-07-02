@@ -315,22 +315,25 @@ img {
 
 .hero-remake-visual {
   position: absolute;
-  top: clamp(88px, 10vw, 132px);
-  right: max(146px, calc((100vw - 1180px) / 2 + 132px));
+  top: clamp(72px, 8.2vw, 104px);
+  right: max(118px, calc((100vw - 1180px) / 2 + 104px));
   bottom: auto;
   z-index: 2;
-  width: clamp(150px, 12.4vw, 194px);
+  width: clamp(186px, 15.3vw, 244px);
 }
 
 .hero-remake-visual img {
   width: 100%;
+  height: auto;
+  transform: scaleX(1.08) scaleY(0.94);
+  transform-origin: center center;
   filter: drop-shadow(0 34px 52px rgba(0, 0, 0, 0.6));
 }
 
 .hero-remake-visual span {
   position: absolute;
-  top: 56%;
-  right: clamp(-124px, -8.5vw, -92px);
+  top: 54%;
+  right: clamp(-132px, -8.7vw, -98px);
   bottom: auto;
   transform: translateY(-50%);
   display: grid;
