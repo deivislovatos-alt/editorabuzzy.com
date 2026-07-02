@@ -131,6 +131,7 @@ img {
 .hero.hero-remake::after {
   position: absolute;
   inset: 0;
+  height: auto;
   content: "";
 }
 
