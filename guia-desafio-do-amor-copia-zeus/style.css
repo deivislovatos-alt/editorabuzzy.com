@@ -139,7 +139,7 @@ img {
   z-index: 0;
   display: block;
   background:
-    url("assets/images/hero-casal-fogo.jpg") center center / cover no-repeat,
+    url("assets/images/hero-casal-fogo.jpg") center center / 96% auto no-repeat,
     #040201;
 }
 
@@ -315,11 +315,11 @@ img {
 
 .hero-remake-visual {
   position: absolute;
-  top: clamp(82px, 7.8vw, 112px);
-  right: max(38px, calc((100vw - 1180px) / 2 + 28px));
+  top: clamp(140px, 12vw, 168px);
+  right: max(160px, calc((100vw - 1180px) / 2 + 150px));
   bottom: auto;
   z-index: 2;
-  width: clamp(286px, 24vw, 376px);
+  width: clamp(292px, 23vw, 360px);
 }
 
 .hero-remake-visual img {
