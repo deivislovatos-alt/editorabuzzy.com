@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="image" href="assets/images/hero-casal-fogo.jpg" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/images/desafio-do-amor-livro-novo.png?v=20260702-2128" fetchpriority="high" />
-    <link rel="stylesheet" href="style.css?v=20260702-2351" />
+    <link rel="stylesheet" href="style.css?v=20260702-2359" />
     <style>
       .hero-remake-visual {
         right: max(-38px, calc((100vw - 1180px) / 2 - 12px)) !important;
@@ -37,6 +37,14 @@
       @media (max-width: 1180px) and (min-width: 621px) {
         .hero-remake-visual {
           right: -38px !important;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .hero-remake-visual {
+          right: auto !important;
+          left: 50% !important;
+          transform: translateX(-50%) !important;
         }
       }
     </style>
