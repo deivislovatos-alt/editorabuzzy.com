@@ -82,12 +82,12 @@ img {
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.94fr) minmax(380px, 0.76fr);
-  gap: clamp(28px, 5vw, 72px);
+  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.78fr);
+  gap: clamp(24px, 5vw, 68px);
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  padding: 44px max(16px, calc((100vw - 1160px) / 2)) 78px;
+  padding: 34px max(16px, calc((100vw - 1160px) / 2)) 64px;
   overflow: hidden;
   color: var(--paper);
 }
@@ -138,9 +138,14 @@ h1 {
 
 .hero-promise {
   max-width: 720px;
-  font-size: clamp(1.37rem, 2.7vw, 2.61rem);
-  line-height: 1.12;
+  color: #fff7e8;
+  font-family: "Cormorant Garamond", "DM Sans", serif;
+  font-size: clamp(3.8rem, 7.6vw, 7.45rem);
+  font-weight: 700;
+  line-height: 0.82;
   text-decoration: none;
+  text-shadow: 0 8px 34px rgba(0, 0, 0, 0.56);
+  text-transform: uppercase;
 }
 
 h2 {
@@ -169,24 +174,29 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.08em;
-  max-width: 700px;
-  margin: 18px 0 0;
+  gap: 0.16em;
+  max-width: 620px;
+  margin: 22px 0 0;
   color: #ffe4a3;
   font-family: "DM Sans", sans-serif;
-  font-size: clamp(1.12rem, 1.85vw, 1.48rem);
+  font-size: clamp(1.34rem, 2.2vw, 1.86rem);
   font-weight: 800;
-  line-height: 1.18;
+  line-height: 1.08;
+  text-shadow: 0 5px 22px rgba(0, 0, 0, 0.42);
 }
 
 .hero-subpromise strong {
-  display: inline;
+  display: block;
   color: #ffe4a3;
-  font: inherit;
-  font-weight: 900;
+  font-family: "Cormorant Garamond", "DM Sans", serif;
+  font-size: clamp(3.08rem, 6.4vw, 6.52rem);
+  font-weight: 700;
+  line-height: 0.82;
+  text-transform: uppercase;
 }
 
 .hero-subpromise em {
+  display: block;
   color: #fff1bd;
   font-style: italic;
   font-weight: 900;
@@ -217,20 +227,20 @@ p {
 .hero-actions {
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 .button {
   position: relative;
   isolation: isolate;
   display: inline-flex;
-  min-height: 52px;
+  min-height: 58px;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 15px 22px;
+  padding: 16px 26px;
   border-radius: 999px;
-  font-size: 0.94rem;
+  font-size: 0.98rem;
   font-weight: 800;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
@@ -387,6 +397,31 @@ p {
   position: relative;
   align-self: center;
   padding-top: 4px;
+}
+
+.access-badge {
+  position: absolute;
+  top: 8%;
+  right: 1%;
+  z-index: 2;
+  display: inline-grid;
+  width: 118px;
+  height: 118px;
+  place-items: center;
+  border: 2px solid rgba(255, 238, 169, 0.78);
+  border-radius: 999px;
+  color: #32120f;
+  background:
+    radial-gradient(circle at 35% 30%, #fff7c4 0%, #ffd75f 46%, #c98518 100%);
+  box-shadow:
+    0 18px 38px rgba(0, 0, 0, 0.32),
+    0 0 0 8px rgba(255, 219, 94, 0.12);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.05;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .image-frame {
@@ -1031,13 +1066,13 @@ html.reveal-ready [data-reveal].is-visible {
 
   .hero-promise {
     max-width: 660px;
-    font-size: clamp(1.95rem, 4.8vw, 2.5rem);
-    line-height: 1.08;
+    font-size: clamp(3.35rem, 11vw, 5.65rem);
+    line-height: 0.84;
   }
 
   .hero-subpromise {
     max-width: 660px;
-    font-size: clamp(1.14rem, 2.7vw, 1.42rem);
+    font-size: clamp(1.18rem, 3.3vw, 1.7rem);
   }
 
   .hero-promise,
@@ -1061,6 +1096,12 @@ html.reveal-ready [data-reveal].is-visible {
   .hero-visual {
     max-width: min(430px, 82vw);
     margin: 0 auto;
+  }
+
+  .access-badge {
+    width: 98px;
+    height: 98px;
+    font-size: 0.68rem;
   }
 
   .image-frame {
@@ -1219,10 +1260,11 @@ html.reveal-ready [data-reveal].is-visible {
     max-width: 350px;
     color: #fff9ef;
     font-family: "Cormorant Garamond", "DM Sans", serif;
-    font-size: clamp(2.62rem, 12.7vw, 3.9rem);
+    font-size: clamp(2.84rem, 13.8vw, 4.2rem);
     font-weight: 700;
     line-height: 0.91;
     text-shadow: 0 4px 22px rgba(0, 0, 0, 0.52);
+    text-transform: uppercase;
   }
 
   h2 {
@@ -1348,11 +1390,6 @@ html.reveal-ready [data-reveal].is-visible {
   .hero-inline-product strong {
     margin-top: 8px;
     font-size: 0.98rem;
-  }
-
-  .hero-inline-product > div > strong,
-  .hero-inline-product > div > span {
-    display: none;
   }
 
   .hero-inline-product .film-reference-mobile {
