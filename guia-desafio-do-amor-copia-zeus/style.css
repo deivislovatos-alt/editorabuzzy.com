@@ -187,6 +187,7 @@ img {
   z-index: 2;
   width: min(48vw, 590px);
   max-width: 590px;
+  text-align: center;
 }
 
 .hero-remake-tag {
@@ -215,12 +216,14 @@ img {
 
 .hero-remake h1 {
   max-width: 570px;
+  margin: 0 auto;
   color: #fff6e7;
   font-family: "Cormorant Garamond", "DM Sans", serif;
-  font-size: clamp(2.7rem, 4.65vw, 4.72rem);
+  font-size: clamp(2rem, 3.25vw, 3.48rem);
   font-weight: 700;
-  line-height: 0.88;
+  line-height: 0.92;
   letter-spacing: 0.01em;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 0 8px 32px rgba(0, 0, 0, 0.58);
 }
@@ -233,16 +236,17 @@ img {
   display: block;
   color: #e1a13d;
   font: inherit;
-  font-size: 1.17em;
+  font-size: 1.34em;
+  line-height: 0.9;
 }
 
 .hero-remake-separator {
   position: relative;
-  width: min(43vw, 540px);
-  max-width: 540px;
-  margin: clamp(12px, 1.4vw, 18px) 0 clamp(12px, 1.4vw, 18px);
+  width: min(36vw, 420px);
+  max-width: 420px;
+  margin: clamp(12px, 1.35vw, 17px) auto clamp(13px, 1.45vw, 18px);
   color: #edc77b;
-  font-size: clamp(1.05rem, 1.7vw, 1.55rem);
+  font-size: clamp(1.04rem, 1.45vw, 1.35rem);
   line-height: 1;
   text-align: center;
 }
@@ -269,7 +273,7 @@ img {
 .hero-remake-line {
   margin: 0;
   color: #fff8ee;
-  font-size: clamp(1.28rem, 2.2vw, 2rem);
+  font-size: clamp(1.16rem, 1.82vw, 1.62rem);
   font-weight: 800;
   line-height: 1.15;
   text-align: center;
@@ -277,25 +281,29 @@ img {
 }
 
 .hero-remake-promise {
-  max-width: 570px;
-  margin: 6px 0 0;
+  max-width: 590px;
+  margin: 4px auto 0;
   color: #fff7e7;
   font-family: "Cormorant Garamond", "DM Sans", serif;
-  font-size: clamp(1.92rem, 3.45vw, 3.58rem);
+  font-size: clamp(2.35rem, 3.95vw, 4.05rem);
   font-weight: 700;
-  line-height: 0.92;
+  line-height: 0.86;
+  text-align: center;
   text-transform: uppercase;
   text-shadow: 0 8px 32px rgba(0, 0, 0, 0.58);
 }
 
 .hero-remake-promise span {
   display: block;
+  color: #fff8ee;
 }
 
 .hero-remake-promise strong {
   display: block;
   color: #e1a13d;
   font: inherit;
+  font-size: 1.34em;
+  line-height: 0.82;
 }
 
 .hero-remake-cta {
@@ -1493,23 +1501,33 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-remake h1 {
-    font-size: clamp(1.82rem, 8.9vw, 2.76rem);
-    line-height: 0.94;
+    font-size: clamp(1.42rem, 6.8vw, 2.12rem);
+    line-height: 0.96;
+  }
+
+  .hero-remake h1 strong {
+    font-size: 1.32em;
+    line-height: 0.9;
   }
 
   .hero-remake-separator {
-    width: min(100%, 380px);
-    margin: 10px auto;
-    font-size: 1.05rem;
+    width: min(84%, 300px);
+    margin: 8px auto 10px;
+    font-size: 0.96rem;
   }
 
   .hero-remake-line {
-    font-size: 1rem;
+    font-size: 0.98rem;
   }
 
   .hero-remake-promise {
-    font-size: clamp(1.62rem, 8.4vw, 2.55rem);
-    line-height: 0.96;
+    font-size: clamp(1.74rem, 8.8vw, 2.72rem);
+    line-height: 0.86;
+  }
+
+  .hero-remake-promise strong {
+    font-size: 1.2em;
+    line-height: 0.82;
   }
 
   .hero-remake-cta {
