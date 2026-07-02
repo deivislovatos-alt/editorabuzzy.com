@@ -316,10 +316,10 @@ img {
 .hero-remake-visual {
   position: absolute;
   top: clamp(118px, 10.2vw, 148px);
-  right: max(18px, calc((100vw - 1180px) / 2 + 18px));
+  right: clamp(-110px, -7vw, -32px);
   bottom: auto;
   z-index: 2;
-  width: clamp(292px, 23vw, 360px);
+  width: clamp(310px, 25vw, 390px);
 }
 
 .hero-remake-visual img {
@@ -1317,9 +1317,9 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-remake-visual {
-    right: 14px;
+    right: -28px;
     bottom: 58px;
-    width: clamp(250px, 31vw, 330px);
+    width: clamp(270px, 35vw, 350px);
   }
 
   .hero-copy {
@@ -1521,7 +1521,11 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-remake-visual {
-    display: none;
+    display: block;
+    top: auto;
+    right: -62px;
+    bottom: 118px;
+    width: min(210px, 55vw);
   }
 
   .hero-image-first {
