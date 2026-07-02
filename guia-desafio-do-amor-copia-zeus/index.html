@@ -29,6 +29,17 @@
     <link rel="preload" as="image" href="assets/images/hero-casal-fogo.jpg" fetchpriority="high" />
     <link rel="preload" as="image" href="assets/images/desafio-do-amor-livro-novo.png?v=20260702-2128" fetchpriority="high" />
     <link rel="stylesheet" href="style.css?v=20260702-2330" />
+    <style>
+      .hero-remake-visual {
+        right: max(-8px, calc((100vw - 1180px) / 2 + 18px)) !important;
+      }
+
+      @media (max-width: 1180px) and (min-width: 621px) {
+        .hero-remake-visual {
+          right: -8px !important;
+        }
+      }
+    </style>
     <script>
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
