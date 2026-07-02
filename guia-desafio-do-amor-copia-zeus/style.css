@@ -316,7 +316,7 @@ img {
 .hero-remake-visual {
   position: absolute;
   top: clamp(118px, 10.2vw, 148px);
-  right: max(160px, calc((100vw - 1180px) / 2 + 150px));
+  right: max(18px, calc((100vw - 1180px) / 2 + 18px));
   bottom: auto;
   z-index: 2;
   width: clamp(292px, 23vw, 360px);
@@ -1317,7 +1317,7 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-remake-visual {
-    right: 52px;
+    right: 14px;
     bottom: 58px;
     width: clamp(250px, 31vw, 330px);
   }
