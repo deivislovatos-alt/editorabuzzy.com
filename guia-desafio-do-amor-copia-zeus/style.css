@@ -139,7 +139,7 @@ img {
   z-index: 0;
   display: block;
   background:
-    url("assets/images/hero-casal-fogo.jpg") center 47% / 82% auto no-repeat,
+    url("assets/images/hero-casal-fogo.jpg") right center / 92% auto no-repeat,
     #040201;
 }
 
@@ -147,8 +147,8 @@ img {
   z-index: 1;
   display: block;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.72) 35%, rgba(0, 0, 0, 0.06) 62%, rgba(0, 0, 0, 0.18) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(5, 2, 1, 0.42) 100%);
+    linear-gradient(90deg, #040201 0%, rgba(4, 2, 1, 0.98) 19%, rgba(4, 2, 1, 0.8) 37%, rgba(4, 2, 1, 0.18) 63%, rgba(4, 2, 1, 0.04) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(5, 2, 1, 0.36) 100%);
 }
 
 .hero-remake-photo {
@@ -1455,7 +1455,7 @@ html.reveal-ready [data-reveal].is-visible {
 
   .hero.hero-remake::before {
     background:
-      url("assets/images/hero-casal-fogo.jpg") center 43% / 104% auto no-repeat,
+      url("assets/images/hero-casal-fogo.jpg") right 45% / 118% auto no-repeat,
       #050201;
   }
 
@@ -1473,8 +1473,8 @@ html.reveal-ready [data-reveal].is-visible {
 
   .hero-remake::after {
     background:
-      linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.82) 67%, #050201 100%),
-      linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.72));
+      linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(0, 0, 0, 0.78) 68%, #050201 100%),
+      linear-gradient(90deg, #050201 0%, rgba(5, 2, 1, 0.84) 34%, rgba(5, 2, 1, 0.16) 72%, rgba(5, 2, 1, 0.1) 100%);
   }
 
   .hero-remake-copy {
