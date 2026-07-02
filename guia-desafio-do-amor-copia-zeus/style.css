@@ -139,7 +139,7 @@ img {
   z-index: 0;
   display: block;
   background:
-    url("assets/images/hero-casal-fogo.jpg") center center / 96% auto no-repeat,
+    url("assets/images/hero-casal-fogo.jpg") center 46% / 90% auto no-repeat,
     #040201;
 }
 
@@ -281,9 +281,9 @@ img {
   margin: 6px 0 0;
   color: #fff7e7;
   font-family: "Cormorant Garamond", "DM Sans", serif;
-  font-size: clamp(3rem, 5.15vw, 5.38rem);
+  font-size: clamp(2.45rem, 4.42vw, 4.62rem);
   font-weight: 700;
-  line-height: 0.81;
+  line-height: 0.86;
   text-transform: uppercase;
   text-shadow: 0 8px 32px rgba(0, 0, 0, 0.58);
 }
@@ -1453,6 +1453,12 @@ html.reveal-ready [data-reveal].is-visible {
     background: #050201;
   }
 
+  .hero.hero-remake::before {
+    background:
+      url("assets/images/hero-casal-fogo.jpg") center 44% / 116% auto no-repeat,
+      #050201;
+  }
+
   .hero-remake-photo {
     top: 252px;
     width: 100%;
@@ -1502,8 +1508,8 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-remake-promise {
-    font-size: clamp(2.55rem, 13.4vw, 4.15rem);
-    line-height: 0.82;
+    font-size: clamp(2.18rem, 11.2vw, 3.45rem);
+    line-height: 0.88;
   }
 
   .hero-remake-cta {
