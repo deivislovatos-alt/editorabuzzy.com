@@ -310,7 +310,7 @@ img {
   min-width: min(100%, 340px);
   min-height: 64px;
   margin-top: clamp(20px, 2.4vw, 30px);
-  margin-left: clamp(14px, 5.9vw, 72px);
+  margin-left: 0;
   padding-inline: 34px;
   color: #32120f !important;
   background: linear-gradient(135deg, #fff2a5 0%, #ffbd2a 48%, #ff7a1a 100%) !important;
