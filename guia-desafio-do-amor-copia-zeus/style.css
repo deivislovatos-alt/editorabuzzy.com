@@ -127,39 +127,31 @@ img {
   background: #040201;
 }
 
-.hero-remake::before,
-.hero-remake::after {
+.hero.hero-remake::before,
+.hero.hero-remake::after {
   position: absolute;
   inset: 0;
   content: "";
 }
 
-.hero-remake::before {
-  z-index: -2;
+.hero.hero-remake::before {
+  z-index: 0;
   display: block;
   background:
-    radial-gradient(circle at 76% 27%, rgba(255, 184, 73, 0.72), transparent 26%),
-    radial-gradient(circle at 68% 48%, rgba(183, 74, 24, 0.58), transparent 32%),
-    linear-gradient(90deg, #020101 0%, #080302 30%, #31140b 61%, #0c0302 100%);
+    url("assets/images/hero-casal-fogo.jpg") center center / cover no-repeat,
+    #040201;
 }
 
-.hero-remake::after {
+.hero.hero-remake::after {
   z-index: 1;
   display: block;
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.74) 41%, rgba(0, 0, 0, 0.08) 67%, rgba(0, 0, 0, 0.38) 100%),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(15, 3, 2, 0.62) 100%);
+    linear-gradient(90deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.72) 35%, rgba(0, 0, 0, 0.06) 62%, rgba(0, 0, 0, 0.18) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(5, 2, 1, 0.42) 100%);
 }
 
 .hero-remake-photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  width: 70%;
-  overflow: hidden;
-  opacity: 1;
+  display: none;
 }
 
 .hero-remake-photo::before,
@@ -1519,21 +1511,7 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-remake-visual {
-    top: auto;
-    right: -44px;
-    bottom: 166px;
-    width: min(92px, 24vw);
-    transform: none;
-  }
-
-  .hero-remake-visual span {
-    top: auto;
-    right: 22px;
-    bottom: 12%;
-    transform: none;
-    width: 54px;
-    height: 54px;
-    font-size: 0.38rem;
+    display: none;
   }
 
   .hero-image-first {
