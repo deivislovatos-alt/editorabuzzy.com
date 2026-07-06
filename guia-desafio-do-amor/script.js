@@ -37,7 +37,7 @@ checkoutButtons.forEach((button) => {
       window.fbq("track", "InitiateCheckout", {
         content_name: "Desafio do Amor",
         content_category: "Guia pratico",
-        value: 9.90,
+        value: 17.90,
         currency: "BRL"
       });
     }

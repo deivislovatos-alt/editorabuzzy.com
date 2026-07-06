@@ -936,6 +936,21 @@ p {
   line-height: 0.9;
 }
 
+.anchor-price {
+  display: block;
+  margin: 0 0 8px;
+  color: #6b5b52;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.anchor-price s {
+  color: #8f312f;
+  text-decoration-thickness: 2px;
+}
+
 .price-note {
   display: block;
   margin: 16px 0 24px;
@@ -1540,6 +1555,11 @@ html.reveal-ready [data-reveal].is-visible {
 
   .price {
     font-size: clamp(2.65rem, 18vw, 4rem);
+  }
+
+  .anchor-price {
+    margin-bottom: 6px;
+    font-size: 0.88rem;
   }
 
   .price-note {
