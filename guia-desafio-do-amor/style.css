@@ -890,6 +890,18 @@ p {
   box-shadow: var(--shadow);
 }
 
+.offer-eyebrow {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.offer-eyebrow::before,
+.offer-eyebrow::after {
+  display: none;
+  content: none;
+}
+
 .offer-copy ul {
   display: grid;
   gap: 10px;
