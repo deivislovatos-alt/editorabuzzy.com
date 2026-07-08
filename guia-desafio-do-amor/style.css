@@ -1245,7 +1245,6 @@ html.reveal-ready [data-reveal].is-visible {
   .hero-promise {
     max-width: 350px;
     color: #fff9ef;
-    font-family: "Cormorant Garamond", "DM Sans", serif;
     font-size: clamp(2.62rem, 12.7vw, 3.9rem);
     font-weight: 700;
     line-height: 0.91;
@@ -1296,7 +1295,6 @@ html.reveal-ready [data-reveal].is-visible {
     display: block;
     margin-top: 0.08em;
     color: #ffe38f;
-    font-family: "Cormorant Garamond", "DM Sans", serif;
     font-size: clamp(2.34rem, 11.4vw, 3.36rem);
     line-height: 0.9;
   }
