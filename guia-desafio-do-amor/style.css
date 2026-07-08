@@ -214,6 +214,10 @@ p {
   display: none;
 }
 
+.mobile-product-badges {
+  display: none;
+}
+
 .hero-actions {
   flex-wrap: wrap;
   gap: 12px;
@@ -1381,7 +1385,7 @@ html.reveal-ready [data-reveal].is-visible {
   }
 
   .hero-inline-product .film-reference-mobile {
-    display: block;
+    display: none;
     max-width: 286px;
     margin: 12px auto 0;
     padding: 0;
@@ -1400,14 +1404,38 @@ html.reveal-ready [data-reveal].is-visible {
     font-size: inherit;
   }
 
+  .mobile-product-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    margin: 12px auto 0;
+  }
+
+  .mobile-product-badges span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 999px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+  }
+
   .hero-inline-product span {
     max-width: 250px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  .trust-row {
-    margin-top: 18px;
+  .hero-copy > .trust-row {
+    display: none;
   }
 
   .trust-row span {
