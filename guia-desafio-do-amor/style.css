@@ -1245,9 +1245,9 @@ html.reveal-ready [data-reveal].is-visible {
   .hero-promise {
     max-width: 350px;
     color: #fff9ef;
-    font-size: clamp(2.62rem, 12.7vw, 3.9rem);
+    font-size: clamp(1.83rem, 8.9vw, 2.73rem);
     font-weight: 700;
-    line-height: 0.91;
+    line-height: 1.02;
     text-shadow: 0 4px 22px rgba(0, 0, 0, 0.52);
   }
 
@@ -1295,8 +1295,8 @@ html.reveal-ready [data-reveal].is-visible {
     display: block;
     margin-top: 0.08em;
     color: #ffe38f;
-    font-size: clamp(2.34rem, 11.4vw, 3.36rem);
-    line-height: 0.9;
+    font-size: clamp(1.64rem, 8vw, 2.35rem);
+    line-height: 0.98;
   }
 
   .hero-subpromise strong em {
